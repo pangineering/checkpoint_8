@@ -34,6 +34,15 @@ ros2 control list_controllers
 ```
 
 ## Move the robot
+1. Using the teleop
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/rb1_base_controller/cmd_vel_unstamped
+```   
+2. Using the command line
+```bash
+ros2 topic pub --rate 10 /rb1_base_controller/cmd_vel_unstamped geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0, z: 0.0}, angular: {x: 0.0,y: 0.0, z: 0.2}}"
+```
+
 ## Moving the Robot's Lifting Unit
 ---
 ## Disclaimer:  
