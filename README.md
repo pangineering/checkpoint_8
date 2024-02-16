@@ -11,7 +11,7 @@ Before installing this package, please ensure you have the following prerequisit
 Once you have installed the prerequisites, you can install the rb1_ros2_description package by cloning the repository into your ROS 2 workspace and building it using colcon:
 ```bash
 cd ros2_ws/src
-git clone [<repository_url>](https://github.com/pangineering/checkpoint_8.git)
+git clone https://github.com/pangineering/checkpoint_8.git
 cd ..
 colcon build
 ```
