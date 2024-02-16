@@ -44,6 +44,21 @@ ros2 topic pub --rate 10 /rb1_base_controller/cmd_vel_unstamped geometry_msgs/ms
 ```
 
 ## Moving the Robot's Lifting Unit
+
+- **To move the lifting unit up:**
+
+```bash
+ros2 service call /apply_joint_effort gazebo_msgs/srv/ApplyJointEffort '{joint_name: "robot_elevator_platform_joint", effort: 2.0, start_time: {sec: 0, nanosec: 0}, duration: {sec: 2000, nanosec: 0} }'
+```
+
+- **To move the lifting unit down:**
+
+```bash
+ros2 service call /apply_joint_effort gazebo_msgs/srv/ApplyJointEffort '{joint_name: "robot_elevator_platform_joint", effort: -2.0, start_time: {sec: 0, nanosec: 0}, duration: {sec: 2000, nanosec: 0} }'
+```
+
+Replace `<robot_name>` with the name of the RB1 robot model, `<lift_controller_up>` with the... (text truncated due to character limit)
+
 ---
 ## Disclaimer:  
 This package only modifies/adapts files from these repositories/packages:  
