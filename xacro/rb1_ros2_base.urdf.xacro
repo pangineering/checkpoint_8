@@ -157,12 +157,13 @@
 
     <gazebo>
 		<plugin name="elevator_controller" filename="libgazebo_ros_force_system.so">
-			 <link name="$(arg prefix)elevator_platform" />
+			 <link name="robot_elevator_base_link" />
             <force>
 			    <x>0</x>
                 <y>0</y>
                 <z>10</z> <!-- Adjust the force as per your requirement -->
             </force>
+             <update_rate>100</update_rate>
 		</plugin>
 	</gazebo>
 
