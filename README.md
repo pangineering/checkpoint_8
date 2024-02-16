@@ -4,7 +4,7 @@ This package contains a ROS2 robot model description for Robotnik's RB-1 mobile 
 
 ## Installation Instructions
 Before installing this package, please ensure you have the following prerequisites installed:
-- ROS 2 (Foxy or later)
+- ROS 2
 - Gazebo (version compatible with ROS 2 distribution)
 - ROS 2 Control (`ros2_control` and `ros2_controllers` packages)
 
