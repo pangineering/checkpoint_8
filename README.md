@@ -11,9 +11,10 @@ Before installing this package, please ensure you have the following prerequisit
 Once you have installed the prerequisites, you can install the rb1_ros2_description package by cloning the repository into your ROS 2 workspace and building it using colcon:
 ```bash
 cd ros2_ws/src
-git clone https://github.com/pangineering/checkpoint_8.git
+git clone https://github.com/pangineering/rb1_ros2_description.git
 cd ..
 colcon build
+source install/setup.bash
 ```
 
 ## Getting Started
@@ -44,6 +45,15 @@ ros2 topic pub --rate 10 /rb1_base_controller/cmd_vel_unstamped geometry_msgs/ms
 ```
 
 ## Moving the Robot's Lifting Unit
+
+The service for liftuing the elevator platform
+
+```bash
+ros2 service list
+```
+```
+/apply_joint_effort
+```
 
 - **To move the lifting unit up:**
 
